@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.baizhi.dao.UserDao">
+
+    <!--分页查询-->
+    <select id="selectAll" resultType="User">
+        select
+          id,
+          phone,
+          username,
+          password,
+          dharma,
+          province,
+          city,
+          sign,
+          sex,
+          photo,
+          create_date createDate
+        from user limit #{begin},#{rows}
+    </select>
+
+    <select id="count" resultType="Integer">
+        select count(*)
+        from user
+    </select>
+
+    <!--不分页查询-->
+    <select id="FindAll" resultType="User">
+        select
+          id,
+          phone,
+          username,
+          password,
+          dharma,
+          province,
+          city,
+          sign,
+          sex,
+          photo,
+          create_date createDate
+        from user
+    </select>
+</mapper>
