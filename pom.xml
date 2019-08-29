@@ -35,6 +35,14 @@
             <scope>test</scope>
         </dependency>
 
+
+        <!--spring整合jsp-->
+
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-jasper</artifactId>
+        </dependency>
+
         <!--引入jstl标签-->
         <dependency>
             <groupId>jstl</groupId>
@@ -82,12 +90,6 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!--spring整合jsp-->
-        <dependency>
-            <groupId>jstl</groupId>
-            <artifactId>jstl</artifactId>
-            <version>1.2</version>
-        </dependency>
 
         <!--   <dependency>
               <groupId>org.springframework.boot</groupId>
@@ -97,11 +99,6 @@
               <groupId>org.apache.tomcat.embed</groupId>
               <artifactId>tomcat-embed-jasper</artifactId>
             </dependency>-->
-
-        <dependency>
-            <groupId>org.apache.tomcat.embed</groupId>
-            <artifactId>tomcat-embed-jasper</artifactId>
-        </dependency>
 
         <!--热部署的依赖-->
         <dependency>
