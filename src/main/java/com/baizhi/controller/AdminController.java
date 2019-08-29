@@ -23,6 +23,7 @@ public class AdminController {
     public Map<String, Object> login(Admin admin, HttpSession session, String captcha) {
 
         Map<String, Object> map = adminService.FindAdmin(admin, captcha, session);
+		System.out.println();
         return map;
         /*Admin findAdmin = adminService.FindAdmin(admin);
         String  code = (String) session.getAttribute("securityCode");
